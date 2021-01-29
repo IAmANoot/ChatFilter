@@ -1,0 +1,8 @@
+name: ChatFilter
+author: Nathan IntelliJ
+version: 1.0
+main: src.Core.Core
+description: Filter things from chat!
+commands:
+  chatfilter:
+    usage: 

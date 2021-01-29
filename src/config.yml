@@ -1,0 +1,65 @@
+#Should all these words be blocked in commands too?
+block-commands: true
+
+#Should players only be able to chat once every 2 seconds?
+chat-cooldown: true
+cooldown-message:
+ - '&6--------------------------------'
+ - '&cYou can only chat every 2 seconds. Buy VIP'
+ - '&c to bypass this restriction!'
+ - '&6--------------------------------'
+
+#Block all words listed here.
+Swear-Words:
+    - "fuck"
+    - "shit"
+    - "fag"
+    - "penis"
+    - "vagina"
+    - "cock"
+    - "pen15"
+    - "bitch"
+    - "shet"
+    - "boner"
+    - "gay"
+    - "lesbian"
+    - "hobo"
+    - "homo"
+    - "retard"
+    - "porn"
+    - "f4ck"
+    - "cunt"
+    - "nigga"
+    - "nigger"
+
+#Use %word% to get the word they tried to say
+#Use %message% to get their whole sentence
+#Use %player% to get their name
+
+#Message when someone swears
+message:
+ - '&6&m-------------------------------------------------'
+ - '&c'
+ - '&cSwearing or using foul language is stricly'
+ - '&cprohibited on this server.'
+ - '&eAttempting to circumvent or bypass this filter,'
+ - '&ewill result in a &cpunishment!'
+ - '&c'
+ - '&6&m-------------------------------------------------'
+
+#If someone uses a word off swear-words. should this happen?
+
+kick-player: false
+kick-message: '&cDo not swear!'
+
+#Should a command be executed when someone swears?
+command-on-swear: false
+command: 'warn %player% Offensive language'
+
+#Enable this if you want people with chatfilter.notify to see when someone swears!
+staff-notify: true
+
+#This is the message staff with chatfilter.notify will recieve
+notify-message: 
+ - '&4ChatFilter &8> &7%player% tried to say &c%word%'
+ - '&8> &c%message%'
